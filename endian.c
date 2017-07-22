@@ -10,7 +10,7 @@ enum  {
 
 int endian(void) {
     uint16_t x = 0x0100;
-    char *p = (char *)x;
+    char *p = (char *)&x;
    
     if (*p)
         return BIG_ENDIAN;
